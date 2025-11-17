@@ -1,4 +1,4 @@
-# Simply Taskful Help Documentation
+# Help Documentation
 
 ## Table of Contents
 
@@ -25,8 +25,9 @@ Welcome to Simply Taskful! This guide will help you get the most out of your tas
 ### Getting Started
 
 - When you first open the app, you'll see the login screen
-- You can sign in with an existing account, create a new account, or continue without an account
+- You can sign in with an existing account, create a new account, or continue without an account (if you've never created an account)
 - If you continue without an account, the app will use local mode (see Local Mode & Cloud Sync section)
+- **Note:** Once you create an account, the "Continue without Account" option will no longer be available
 - Once you're in the app, you can start creating tasks immediately
 
 ### Creating Your First Task
@@ -61,6 +62,7 @@ Simply Taskful offers two ways to use the app: Local Mode (no account required) 
 - Your data is private and never leaves your device
 - Perfect for users who want to use the app without cloud sync
 - All core features work in local mode (tasks, categories, notifications, calendar import, etc.)
+- **Note:** Local Mode is only available to users who have never created an account. Once you create an account, this option is no longer available.
 
 ### Cloud Mode
 
@@ -73,11 +75,11 @@ Simply Taskful offers two ways to use the app: Local Mode (no account required) 
 
 ### Switching Between Modes
 
-- You can switch from local mode to cloud mode at any time by signing in
-- When you sign in, your local data will be automatically migrated to the cloud
-- You can exit cloud mode by signing out, but your cloud data will remain
-- If you sign back in later, your cloud data will be restored
-- Local mode data and cloud data are kept separate until you sign in
+- You can switch from local mode to cloud mode by creating an account and signing in
+- When you first sign in, your local data will be automatically migrated to the cloud
+- **Important:** Once you create an account, you cannot switch back to local mode. The "Continue without Account" option will no longer appear on the login screen
+- If you sign out, you can sign back in to access your cloud data, but you cannot return to local mode
+- Local mode data and cloud data are kept separate until you sign in for the first time
 
 ### Features by Mode
 

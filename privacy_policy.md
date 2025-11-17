@@ -10,7 +10,9 @@ Simply Taskful offers two modes of operation:
 
 **Local Mode:** You can use the app without creating an account. In this mode, all your data (tasks, categories, keywords, and calendar import history) is stored locally on your device. No data is sent to our servers, and no account is required. Your data remains private and is only accessible on your device.
 
-**Cloud Mode:** When you create an account, your data is synced to Firebase (our cloud storage provider) to enable access across multiple devices and provide backup functionality. You can switch between local and cloud modes at any time. When switching from local to cloud mode, your local data will be migrated to the cloud. When switching from cloud to local mode, your cloud data will be copied to local storage.
+**Important:** Local Mode data is included in your device's iCloud backup. However, if you delete the app and reinstall it without restoring from an iCloud backup, your local data will be lost. To preserve your data, either restore from an iCloud backup after reinstalling, or switch to Cloud Mode before deleting the app.
+
+**Cloud Mode:** When you create an account, your data is synced to Firebase (our cloud storage provider) to enable access across multiple devices and provide backup functionality. Once you create an account, you will use Cloud Mode going forward. When you first sign in, any local data will be automatically migrated to the cloud. **Note:** After creating an account, the local mode option is no longer available. If you sign out, you can sign back in to access your cloud data, but you cannot switch back to local mode.
 
 ## Information We Collect
 
@@ -42,9 +44,9 @@ If you enable calendar import, the app will access your iOS calendar to import e
 
 ## Data Storage and Security
 
-**Local Mode:** When using the app in Local Mode, all your data is stored locally on your device using iOS's standard storage mechanisms. Your data is not transmitted to any servers and remains private on your device.
+**Local Mode:** When using the app in Local Mode, all your data is stored locally on your device using iOS's standard storage mechanisms (UserDefaults). Your data is not transmitted to any servers and remains private on your device. While your device's iCloud backup includes this data, it will only be restored if you restore your entire device from an iCloud backup after reinstalling the app. Local Mode data does not automatically sync to other devices.
 
-**Cloud Mode:** When you create an account and use Cloud Mode, your data is encrypted in transit and at rest using industry-standard security measures. We use Firebase for secure data storage and authentication. Task data, categories, keywords, and calendar import history are stored in Firebase Firestore. Your data is protected by Firebase's security infrastructure and is only accessible to you through your authenticated account.
+**Cloud Mode:** When you create an account and use Cloud Mode, your data is encrypted in transit and at rest using industry-standard security measures. We use Firebase for secure data storage and authentication. Task data, categories, keywords, and calendar import history are stored in Firebase Firestore. Your data is protected by Firebase's security infrastructure and is only accessible to you through your authenticated account. Cloud Mode provides automatic syncing across all your devices.
 
 Calendar access permissions are managed through iOS system settings and can be revoked at any time, regardless of which mode you're using.
 
