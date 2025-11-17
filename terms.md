@@ -13,6 +13,14 @@ When using Simply Taskful, you agree to:
 - Respect the app's intended purpose
 - Follow all applicable laws and regulations
 
+## Account and Mode Usage
+
+Simply Taskful offers two modes of operation:
+
+**Local Mode:** You can use the app without creating an account. Local Mode is only available to users who have never created an account. Once you create an account, the Local Mode option is no longer available. In Local Mode, all data is stored locally on your device and is not synced to the cloud.
+
+**Cloud Mode:** When you create an account, your data is synced to Firebase to enable access across multiple devices. Once you create an account, you will use Cloud Mode going forward. You cannot switch back to Local Mode after creating an account. If you sign out, you can sign back in to access your cloud data, but you cannot return to Local Mode.
+
 ## User Responsibilities
 
 As a user of Simply Taskful, you are responsible for:
