@@ -1,4 +1,4 @@
-# Help Documentation
+# Simply Taskful Help Documentation
 
 ## Table of Contents
 
